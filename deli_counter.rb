@@ -14,6 +14,7 @@ def line(array)
   end 
 end
 
+
 def take_a_number(array, customer)
   if array.length == 0 
     array.push(customer)
@@ -22,4 +23,13 @@ def take_a_number(array, customer)
     array.push(customer)
     puts "Welcome, #{customer}. You are number #{array.index(customer) + 1} in line."
   end
+end
+
+
+def now_serving(array)
+  if array.length == 0 
+    puts "There is nobody waiting to be served!"
+  else 
+  person = array.shift
+  puts "Currently serving #{person}"
 end
