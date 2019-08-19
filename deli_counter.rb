@@ -20,8 +20,6 @@ def take_a_number(array, customer)
     puts "Welcome, #{customer}. You are number 1 in line."
   else
     array.push(customer)
-    num = 1 
-    puts "Welcome #{customer}. You are number #{array.index(customer) + 1}  in line."
-    num += 1 
+    puts "Welcome, #{customer}. You are number #{array.index(customer) + 1}  in line."
   end
 end
