@@ -19,7 +19,6 @@ def take_a_number(array, customer)
     array.push(customer)
     puts "Welcome, #{customer}. You are number 1 in line."
   else
-    array.push(customer)
     puts "Welcome, #{customer}. You are number #{array.index(customer) + 1}  in line."
   end
 end
